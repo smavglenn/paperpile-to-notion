@@ -35,5 +35,5 @@ jobs:
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
-        env:
+        with:
            GITHUB_TOKEN: ${{secrets.PAT}}
