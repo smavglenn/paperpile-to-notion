@@ -33,13 +33,7 @@ jobs:
             git commit -am 'Update archive.'
         shell: bash
 
-      - name: Push changes
-  uses: actions/git-client@v2
-  with:
-    git_user_email: 'seba-1511@hotmail.com'
-    git_user_name: 'Paperpile to Notion'
-    ref: 'master'
-    repository: 'smavglenn/paperpile-to-notion'
-    push_pattern: '.'
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
