@@ -43,6 +43,3 @@ jobs:
     push_pattern: '.'
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-# A job requires either 'runs-on' or 'uses'
-# This job uses 'uses: actions/git-client@v2'
